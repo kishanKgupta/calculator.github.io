@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: #dddddd;
+}
+.main { 
+    width: auto;
+    height: 600px;
+    display: grid;
+    justify-items: center;
+    align-items: center;  
+}
+.container {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 8px;
+    border: 5px solid rgb(40, 40, 40);
+    box-shadow: 10px 10px 30px gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: end;
+    justify-items: center;
+    padding: 20px; 
+    
+}
+.box1{
+    grid-column-start: span 2;
+    align-self: center;
+    justify-self: left;
+    margin-left: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 
+}
+.box2{
+    grid-column-start: span 2;
+    align-self:center;
+    justify-self: right;
+    margin-right: 10px;
+}
+
+/* .box3{
+    grid-column-start: span 4;
+    width: 90%;
+    height: 80%;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(41, 65, 38, 0.757);
+   border: 3px solid rgb(32, 31, 31);
+ 
+} */
+.spc{
+    grid-column-start: span 4;
+    width: 100%;
+    height: 100%;
+}
+input{
+       margin-left: 15px;
+       
+        width: 82%;
+        height: 70%;
+        border-radius: 5px;
+           
+            background-color: rgba(41, 65, 38, 0.757);
+            font-size: 25px;
+            text-align: right;
+            padding: 5px;
+            font-family:monospace;
+            border: 2px solid rgb(32, 31, 31);
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.0rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #d3d2d2;
+    background: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(164, 164, 164, 0.65);
+    padding: 10px;
+}
+
+
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(200, 198, 198, 0.65);
+}
+.ok{
+    background-color: rgb(231, 77, 77);
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0.3rem rgb(135, 135, 135);
+    color: black;
+   font-weight: bolder;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.ok:active {
+    transform: translate(0, 0.1rem);
+box-shadow: 0 0.1rem rgb(135, 135, 135);
+}
+.new{
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(21, 116, 0);
+}
